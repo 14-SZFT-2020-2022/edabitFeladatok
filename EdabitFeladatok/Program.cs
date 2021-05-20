@@ -22,7 +22,10 @@ namespace EdabitFeladatok
             // VeryEasy.LessThan(83, 34);
 
             // Easy.MonthName(2);
-            Easy.FindMinMax(new int[] { 12, 25, 36, -89, 7 });
+            // Easy.FindMinMax(new int[] { 12, 25, 36, -89, 7 });
+            // Easy.HonapNeve(8);
+            // Easy.CountVowels("almafák az erdőben");
+            Easy.IsIdentical("aaaaabaaa");
 
             Console.ReadKey(true);
         }

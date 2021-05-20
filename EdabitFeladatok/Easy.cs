@@ -8,6 +8,25 @@ namespace EdabitFeladatok
 {
     class Easy
     {
+        enum Honapok { Január = 1, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December }
+
+        public static string HonapNeve(int szam)
+        {
+            string honap = "";
+
+            for (int i = 1; i < 13; i++)
+            {
+                if (szam == i)
+                {
+                    honap = ((Honapok)szam).ToString();
+                }
+            }
+
+            Console.WriteLine($"A keresett hónap: {honap}");
+
+            return honap;
+        }
+
         public static string MonthName(int szam)
         {
             string honap = "";
@@ -76,6 +95,56 @@ namespace EdabitFeladatok
             }
 
             return osszeg;
+        }
+
+        public static int CountVowels(string bemenet)
+        {
+            int maganhangzokSzama = 0;
+            char[] tomb = bemenet.ToCharArray();
+
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] == 'a' || tomb[i] == 'á' || 
+                    tomb[i] == 'e' || tomb[i] == 'é' ||
+                    tomb[i] == 'i' || tomb[i] == 'í' ||
+                    tomb[i] == 'o' || tomb[i] == 'ó' ||
+                    tomb[i] == 'ö' || tomb[i] == 'ő' ||
+                    tomb[i] == 'u' || tomb[i] == 'ú' ||
+                    tomb[i] == 'ü' || tomb[i] == 'ű')
+                {
+                    maganhangzokSzama++;
+                }
+            }
+
+            Console.WriteLine($"A kifejezésben: {bemenet} található magánhangzók száma: {maganhangzokSzama}");
+
+            return maganhangzokSzama;
+        }
+
+        public static bool IsIdentical(string bemenet)
+        {
+            char elso = bemenet[0];
+            bool azonos = true;
+
+            for (int i = 1; i < bemenet.Length; i++)
+            {
+                if (bemenet[i] != elso)
+                {
+                    azonos = false;
+                    break;
+                }
+            }
+
+            if (azonos)
+            {
+                Console.WriteLine("Minden karakter egyforma!");
+            }
+            else
+            {
+                Console.WriteLine("Nem minden karakter egyforma!");
+            }
+
+            return azonos;
         }
     }
 }
