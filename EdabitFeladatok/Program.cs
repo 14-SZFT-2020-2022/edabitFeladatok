@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EdabitFeladatok
 {
@@ -29,7 +25,9 @@ namespace EdabitFeladatok
 
             // Medium.ArrayOfMultiples(7, 5);
             // Medium.ReverseCase("áéíóőúüűÁÉÍÓŐÚÜŰ");
-            Medium.GetMiddle("12");
+            // Medium.GetMiddle("12");
+
+            Hard.Interview(new int[] { 5, 5, 10, 11, 15, 15, 20, 20 }, 120);
 
             Console.ReadKey(true);
         }
