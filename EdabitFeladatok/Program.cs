@@ -18,8 +18,11 @@ namespace EdabitFeladatok
             // VeryEasy.TriArea(3, 5);
             // VeryEasy.Remainder(3, 5);
             // VeryEasy.Remainder(5, 3);
-            VeryEasy.LessThan(22, 15);
-            VeryEasy.LessThan(83, 34);
+            // VeryEasy.LessThan(22, 15);
+            // VeryEasy.LessThan(83, 34);
+
+            // Easy.MonthName(2);
+            Easy.FindMinMax(new int[] { 12, 25, 36, -89, 7 });
 
             Console.ReadKey(true);
         }
