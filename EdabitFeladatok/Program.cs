@@ -25,7 +25,11 @@ namespace EdabitFeladatok
             // Easy.FindMinMax(new int[] { 12, 25, 36, -89, 7 });
             // Easy.HonapNeve(8);
             // Easy.CountVowels("almafák az erdőben");
-            Easy.IsIdentical("aaaaabaaa");
+            // Easy.IsIdentical("aaaaabaaa");
+
+            // Medium.ArrayOfMultiples(7, 5);
+            // Medium.ReverseCase("áéíóőúüűÁÉÍÓŐÚÜŰ");
+            Medium.GetMiddle("12");
 
             Console.ReadKey(true);
         }
